@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl:PL">
+  <head>
+    <title>Matematyka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <p><h1>Strona z opisem matematykii</h1></p>
+    </header>
+    <nav>
+      <ol>
+        <li><a href="index.html">Opis strony</a></li>
+        <br>
+        <li><a href="index2.html">Dodawanie i odejmowanie</a></li>
+        <br>
+        <li><a href="index3.html">Mnożenie i Dzielenie</a></li>
+      </ol>
+    </nav>
+    <main align="center">
+      <p><h2><u>Mnożenie i dzielenie</u></h2></p>
+      <form action method="post">
+        <label for name="liczba_1">Podaj liczbe</label>
+        <br>
+        <input type="number" name="liczba_1" id="a"  placeholder="np:2137" required>
+        <br>
+        <label for name="liczba_2">Podaj liczbe</label>
+        <br>
+        <input type="number" name="liczba_2" id="b" placeholder="np:2137" required>
+        <br>
+        <br>
+        <button type="button" onclick="mnoz()">Mnóż</button>
+        <br>
+        <br>
+        <button type="button" onclick="dzielenie()">Dziel</button>
+      </form>
+      <br>
+      <br>
+      <p id="wynik"></p>
+      
+    </main>
+    <footer><p>Twórcą trony jest Mateusz Zawisza</p></footer>
+  </body>
+  <script>
+    function mnoz() {
+      var x = parseInt(document.getElementById('a').value);
+       var y = parseInt(document.getElementById('b').value);
+       z = x * y;
+       document.getElementById('wynik').innerHTML=z;
+       wynik.style.color="red";
+    }
+    function dzielenie() {
+      var x = parseInt(document.getElementById('a').value);
+       var y = parseInt(document.getElementById('b').value);
+       z = x / y;
+       document.getElementById('wynik').innerHTML=z;
+       wynik.style.color="red";
+    }
+  </script>
+</html>
